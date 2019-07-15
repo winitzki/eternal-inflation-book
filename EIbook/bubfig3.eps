@@ -1,0 +1,423 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: PageDraw, Version 1.7
+%%Title: bubfig3-1.pdx
+%%CreationDate: Tue Mar 26 23:45:54 1996
+%%BoundingBox: 103 499 400 752
+%%DocumentFonts: Symbol
+%%+ Times-Italic
+%%+ Times-Roman
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset PageDraw_ops
+%%Version: 1.7
+%%Copyright: (c) 1993, 94, 95 Rajeev V Karunakaran
+/PDXDict 100 dict def
+PDXDict begin
+% width height matrix proc key cache
+% definepattern -\> font
+/definepattern { %def
+  7 dict begin
+    /FontDict 9 dict def
+    FontDict begin
+      /cache exch def
+      /key exch def
+      /proc exch cvx def
+      /mtx exch matrix invertmatrix def
+      /height exch def
+      /width exch def
+      /ctm matrix currentmatrix def
+      /ptm matrix identmatrix def
+      /str
+      (12345678901234567890123456789012)
+      def
+    end
+    /FontBBox [ %def
+      0 0 FontDict /width get
+      FontDict /height get
+    ] def
+    /FontMatrix FontDict /mtx get def
+    /Encoding StandardEncoding def
+    /FontType 3 def
+    /BuildChar { %def
+      pop begin
+      FontDict begin
+        width 0 cache { %ifelse
+          0 0 width height setcachedevice
+        }{ %else
+          setcharwidth
+        } ifelse
+        0 0 moveto width 0 lineto
+        width height lineto 0 height lineto
+        closepath clip newpath
+        gsave proc grestore
+      end end
+    } def
+    FontDict /key get currentdict definefont
+  end
+} bind def
+
+% dict patternpath -
+% dict matrix patternpath -
+/patternpath { %def
+  dup type /dicttype eq { %ifelse
+    begin FontDict /ctm get setmatrix
+  }{ %else
+    exch begin FontDict /ctm get setmatrix
+    concat
+  } ifelse
+  currentdict setfont
+  FontDict begin
+    FontMatrix concat
+    width 0 dtransform
+    round width div exch round width div exch
+    0 height dtransform
+    round height div exch
+    round height div exch
+    0 0 transform round exch round exch
+    ptm astore setmatrix
+
+    pathbbox
+    height div ceiling height mul 4 1 roll
+    width div ceiling width mul 4 1 roll
+    height div floor height mul 4 1 roll
+    width div floor width mul 4 1 roll
+
+    2 index sub height div ceiling cvi exch
+    3 index sub width div ceiling cvi exch
+    4 2 roll moveto
+
+    FontMatrix ptm invertmatrix pop
+    { %repeat
+      gsave
+        ptm concat
+        dup str length idiv { %repeat
+          str show
+        } repeat
+        dup str length mod str exch
+        0 exch getinterval show
+      grestore
+      0 height rmoveto
+    } repeat
+    pop
+  end end
+} bind def
+
+% dict patternfill -
+% dict matrix patternfill -
+/patternfill { %def
+  gsave
+    clip patternpath
+  grestore
+  newpath
+} bind def
+
+/arrowhead {
+  gsave
+    [] 0 setdash
+    strokeC strokeM strokeY strokeK setcmykcolor
+    2 copy moveto
+    4 2 roll exch 4 -1 roll exch
+    sub 3 1 roll sub
+    exch atan rotate dup scale
+    arrowtype
+    dup 0 eq {
+      -1 2 rlineto 7 -2 rlineto -7 -2 rlineto
+      closepath fill
+    } if
+    dup 1 eq {
+      0 3 rlineto 9 -3 rlineto -9 -3 rlineto
+      closepath fill
+    } if
+    dup 2 eq {
+      currentpoint -6 -6 rmoveto lineto -6 6 rlineto
+      2 setlinewidth stroke
+    } if
+    pop
+  grestore
+} bind def
+
+/setcmykcolor where { %ifelse
+  pop
+}{ %else
+  /setcmykcolor {
+     /black exch def /yellow exch def
+     /magenta exch def /cyan exch def
+     cyan black add dup 1 gt { pop 1 } if 1 exch sub
+     magenta black add dup 1 gt { pop 1 } if 1 exch sub
+     yellow black add dup 1 gt { pop 1 } if 1 exch sub
+     setrgbcolor
+  } bind def
+} ifelse
+
+/RE { %def
+  findfont begin
+  currentdict dup length dict begin
+    { %forall
+      1 index /FID ne { def } { pop pop } ifelse
+    } forall
+    /FontName exch def dup length 0 ne { %if
+      /Encoding Encoding 256 array copy def
+      0 exch { %forall
+        dup type /nametype eq { %ifelse
+          Encoding 2 index 2 index put
+          pop 1 add
+        }{ %else
+          exch pop
+        } ifelse
+      } forall
+    } if pop
+  currentdict dup end end
+  /FontName get exch definefont pop
+} bind def
+
+/WinAnsiEncoding [
+  39/quotesingle 96/grave 130/quotesinglbase/florin/quotedblbase
+  /ellipsis/dagger/daggerdbl/circumflex/perthousand
+  /Scaron/guilsinglleft/OE 145/quoteleft/quoteright
+  /quotedblleft/quotedblright/bullet/endash/emdash
+  /tilde/trademark/scaron/guilsinglright/oe/dotlessi
+  159/Ydieresis 164/currency 166/brokenbar 168/dieresis/copyright
+  /ordfeminine 172/logicalnot 174/registered/macron/ring
+  177/plusminus/twosuperior/threesuperior/acute/mu
+  183/periodcentered/cedilla/onesuperior/ordmasculine
+  188/onequarter/onehalf/threequarters 192/Agrave/Aacute
+  /Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+  /Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute
+  /Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute
+  /Ocircumflex/Otilde/Odieresis/multiply/Oslash
+  /Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn
+  /germandbls/agrave/aacute/acircumflex/atilde/adieresis
+  /aring/ae/ccedilla/egrave/eacute/ecircumflex
+  /edieresis/igrave/iacute/icircumflex/idieresis
+  /eth/ntilde/ograve/oacute/ocircumflex/otilde
+  /odieresis/divide/oslash/ugrave/uacute/ucircumflex
+  /udieresis/yacute/thorn/ydieresis
+] def
+
+/patarray [
+/leftdiagonal /rightdiagonal /crossdiagonal /horizontal
+/vertical /crosshatch /fishscale /wave /brick
+] def
+/arrowtype 0 def
+/fillC 0 def /fillM 0 def /fillY 0 def /fillK 0 def
+/strokeC 0 def /strokeM 0 def /strokeY 0 def /strokeK 1 def
+/pattern -1 def
+/mat matrix def
+/c /curveto load def
+/C /curveto load def
+/e { gsave concat 0 0 moveto } bind def
+/F {
+  pattern -1 eq { %ifelse
+    fillC fillM fillY fillK setcmykcolor fill
+  }{ %else
+    gsave fillC fillM fillY fillK setcmykcolor fill grestore
+    0 0 0 1 setcmykcolor
+    patarray pattern get findfont patternfill
+  } ifelse
+} bind def
+/f { closepath F } bind def
+/K { /strokeK exch def /strokeY exch def
+     /strokeM exch def /strokeC exch def } bind def
+/k { /fillK exch def /fillY exch def
+     /fillM exch def /fillC exch def } bind def
+/L /lineto load def
+/m /moveto load def
+/n /newpath load def
+/N /newpath load def
+/S { strokeC strokeM strokeY strokeK setcmykcolor stroke } bind def
+/s { closepath S } bind def
+/t { fillC fillM fillY fillK setcmykcolor show } bind def
+/T { grestore } bind def
+/w /setlinewidth load def
+/d /setdash load def
+/B { gsave F grestore S } bind def
+/b { closepath B } bind def
+/z { pop pop pop exch findfont exch scalefont setfont } bind def
+/Pat { /pattern exch def } bind def
+/At { /arrowtype exch def } bind def
+/Ln {
+  mat currentmatrix pop
+    concat
+    /y1 exch def /x1 exch def /y2 exch def /x2 exch def
+    dup 2 mod 1 eq { currentlinewidth x2 y2 x1 y1 arrowhead } if
+    2 idiv 1 eq { currentlinewidth x1 y1 x2 y2 arrowhead } if
+    x1 y1 moveto x2 y2 lineto
+  mat setmatrix
+} bind def
+/Ar {
+  mat currentmatrix pop
+    concat translate scale 0 0 1 5 -2 roll arc
+  mat setmatrix
+} bind def
+/Pi {
+  mat currentmatrix pop
+    concat translate scale
+    0 0 moveto 0 0 1 5 -2 roll arc closepath
+  mat setmatrix
+} bind def
+/Bx {
+  mat currentmatrix pop
+    concat /y1 exch def /x1 exch def /y2 exch def /x2 exch def
+    x1 y1 moveto x1 y2 lineto x2 y2 lineto x2 y1 lineto
+  mat setmatrix
+} bind def
+/Ov {
+  mat currentmatrix pop
+    concat translate scale 0 0 1 0 360 arc
+  mat setmatrix
+} bind def
+end
+%%EndResource
+%%EndProlog
+%%BeginSetup
+PDXDict begin
+/_PDX_savepage save def
+
+15 15 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 setlinecap
+  7.5 0 moveto 15 7.5 lineto
+  0 7.5 moveto 7.5 15 lineto
+  2 setlinewidth stroke
+} bind
+/rightdiagonal true definepattern pop
+
+15 15 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 setlinecap
+  7.5 0 moveto 0 7.5 lineto
+  15 7.5 moveto 7.5 15 lineto
+  2 setlinewidth stroke
+} bind
+/leftdiagonal true definepattern pop
+
+15 15 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 setlinecap
+  0 7.5 moveto 15 7.5 lineto
+  2 setlinewidth stroke
+} bind
+/horizontal true definepattern pop
+
+15 15 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 setlinecap
+  7.5 0 moveto 7.5 15 lineto
+  2 setlinewidth stroke
+} bind
+/vertical true definepattern pop
+
+15 15 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 setlinecap
+  0 7.5 moveto 15 7.5 lineto
+  7.5 0 moveto 7.5 15 lineto
+  2 setlinewidth stroke
+} bind
+/crosshatch true definepattern pop
+
+30 30 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 setlinecap
+  0 7.5 moveto 30 7.5 lineto
+  0 22.5 moveto 30 22.5 lineto
+  7.5 0 moveto 7.5 7.5 lineto
+  7.5 22.5 moveto 7.5 30 lineto
+  22.5 7.5 moveto 22.5 22.5 lineto
+  1 setlinewidth stroke
+} bind
+/brick true definepattern pop
+
+30 30 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 2 scale
+  2 setlinecap
+  7.5 0 moveto 15 7.5 lineto
+  0 7.5 moveto 7.5 15 lineto
+  7.5 0 moveto 0 7.5 lineto
+  15 7.5 moveto 7.5 15 lineto
+  0.5 setlinewidth stroke
+} bind
+/crossdiagonal true definepattern pop
+
+30 30 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  2 2 scale
+  1 setlinecap
+  0 7.5 moveto 0 15 7.5 270 360 arc
+  7.5 15 moveto 15 15 7.5 180 270 arc
+  0 7.5 moveto 7.5 7.5 7.5 180 360 arc
+  0.5 setlinewidth stroke
+} bind
+/fishscale true definepattern pop
+
+30 30 [300 72 div 0 0 300 72 div 0 0]
+{ %definepattern
+  1 setlinecap 0.5 setlinewidth
+  7.5 0 10.6 135 45 arcn
+  22.5 15 10.6 225 315 arc
+  stroke
+  7.5 15 10.6 135 45 arcn
+  22.5 30 10.6 225 315 arc
+  stroke
+} bind
+/wave true definepattern pop
+
+WinAnsiEncoding /_Symbol /Symbol RE
+WinAnsiEncoding /_Times-Italic /Times-Italic RE
+WinAnsiEncoding /_Times-Roman /Times-Roman RE
+
+0 setlinecap 0 setlinejoin 10 setmiterlimit
+1 setlinewidth [] 0 setdash
+%%EndSetup
+%%Page: 1 1
+0 At
+2 378 540 126.269 540.237 [1 0 0 1 0 0] Ln
+S
+0 At
+2 126 720 126 522 [1 0 0 1 36.1 -0.008911] Ln
+S
+1 1 1 0 k
+/_Symbol 20 20 0 0 z
+[1 0 0 1 379.9 522.7] e
+(s) t
+T
+/_Times-Italic 24 24 0 0 z
+[1 0 0 1 170.2 718.1] e
+(V) t
+T
+/_Times-Roman 14 14 0 0 z
+[1 0 0 1 181.9 713.1] e
+(0) t
+T
+/_Symbol 20 20 0 0 z
+[1 0 0 1 191.7 720.1] e
+(\(s\)) t
+T
+/_Times-Roman 20 20 0 0 z
+[1 0 0 1 146 518.9] e
+(0) t
+T
+/_Symbol 20 20 0 0 z
+[1 0 0 1 324.2 522.8] e
+(s) t
+T
+/_Times-Roman 11 11 0 0 z
+[1 0 0 1 336.4 518.7] e
+(0) t
+T
+125.741 626.363 m
+129.979 591.028 140.846 572.918 161.741 572.363 c
+179.735 571.886 189.777 616.303 225.719 614.756 c
+268.811 612.902 303.599 541.048 330.769 541.044 c
+353.698 541.04 370.78 575.339 378.401 587.723 c
+0 0 0 0 k
+S
+%%PageTrailer
+_PDX_savepage restore
+%%Trailer
+end
+% Before sending this file to a PostScript printer,
+% remove % character from next line.
+% showpage
+%%EOF
