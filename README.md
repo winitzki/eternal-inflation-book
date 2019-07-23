@@ -15,3 +15,10 @@ Run `bash build.sh` in the source directory to build the PDF version of the book
 
 This requires LyX and LaTeX to be installed.
 
+The most recent PDF build is available in the git repository as [EIbook/eternal_inflation_book.pdf](EIbook/eternal_inflation_book.pdf).
+
+# Purchase a low-priced paper copy
+
+[http://www.lulu.com/content/paperback-book/eternal-inflation/24950934](http://www.lulu.com/content/paperback-book/eternal-inflation/24950934)
+
+

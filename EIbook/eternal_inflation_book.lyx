@@ -415,13 +415,21 @@ noprefix "false"
  This free version of the book does not retain any typography of the 2009
  edition and may contain minor differences in the text.
  The full source code of the book is available at 
+\family typewriter
+\size small
+
 \begin_inset CommandInset href
 LatexCommand href
 target "https://github.com/winitzki/eternal-inflation-book"
 
 \end_inset
 
+
+\family default
+\size default
  as LyX, LaTeX, and graphics files.
+ The source code represents the April 2009 revision of the text.
+ A hyperlinked, full-color PDF file is also available at the same location.
 \end_layout
 
 \begin_layout Lowertitleback
@@ -612,9 +620,9 @@ measure problem.
 \end_layout
 
 \begin_layout Standard
-It is likely, given the present state of cosmological knowledge, that the
- universe may continue expanding forever and that local conditions in the
- universe are at least to some extent randomly produced.
+It is likely, given the present cosmological knowledge, that the universe
+ may continue expanding forever and that local conditions in the universe
+ are at least to some extent randomly produced.
  As a result, different and causally independent regions of the universe
  — that is to say, regions inaccessibly far removed from each other in space
  and time — may, by chance, acquire the hot homogeneous state (the 
@@ -787,8 +795,8 @@ italics
 \end_layout
 
 \begin_layout Standard
-The first research papers on eternal inflation was published by Andrei Linde,
- Alexey Starobinsky, and Alexander Vilenkin between 1982 and 1986.
+The first papers on eternal inflation were published by Andrei Linde, Alexey
+ Starobinsky, and Alexander Vilenkin between 1982 and 1986.
  I will attempt to give due credit by referencing substantially all contributors
  to the field.
  A recent book 
@@ -878,17 +886,6 @@ Xfig
 .
  I express profound gratitude to the creators and maintainers of this outstandin
 g free software.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align right
-
-\emph on
-Sergei Winitzki, March 2009
 \end_layout
 
 \begin_layout Standard
@@ -46329,7 +46326,7 @@ s, which can be visualized as a cutoff in probability space, rather than
 \end_layout
 
 \begin_layout Standard
-In chapters
+Chapters
 \begin_inset space ~
 \end_inset
 
@@ -46351,7 +46348,7 @@ reference "cha:The-new-measure-for-landscape"
 
 \end_inset
 
- I develop a mathematical framework for the technically difficult analysis
+ develop a mathematical framework for the technically difficult analysis
  of the probability distributions of observables in the RV cutoff.
  There are two main contexts in which the RV cutoff is applied: the slow-roll
  inflation driven by a scalar field, and the landscape of string theory.
@@ -46517,7 +46514,8 @@ name "chap:Copyright-transfer-statement"
 
 \begin_layout Standard
 Copyright was returned to the author in 2018.
- A copy of the copyright transfer follows.
+ A facsimile reproduction of the copyright transfer letter is found on the
+ next page.
 \end_layout
 
 \begin_layout Standard
@@ -46525,7 +46523,7 @@ Copyright was returned to the author in 2018.
 \begin_inset Graphics
 	filename Winitzki-World-Scientific-Copyright-Transfer.eps
 	lyxscale 50
-	width 90text%
+	width 92text%
 
 \end_inset
 
